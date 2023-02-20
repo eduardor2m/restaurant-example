@@ -1,0 +1,118 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 230px;
+  // border: 1px solid #ccc;
+  border-radius: 5px;
+  // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 15px;
+  padding: 16px;
+  background-color: #fff;
+
+  .product_favorite {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    padding: 10px;
+  }
+
+  .product_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40%;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    // background-color: #ccc;
+  }
+
+  .product_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    margin-bottom: 1rem;
+
+    .product_content_title {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: var(--title);
+    }
+
+    .product_content_description {
+      font-size: 0.5rem;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .product_content_wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+
+      .product_content_price {
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+        color: var(--title);
+
+        .product_content_measure {
+          font-size: 0.6rem;
+          font-weight: 600;
+          text-align: center;
+          color: #ebf2fa;
+          background-color: #70e000;
+          padding: 2px 5px;
+          border-radius: 5px;
+          margin-bottom: 5px;
+        }
+      }
+
+      .product_content_button {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+
+        button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 36px;
+          height: 36px;
+          padding: 10px;
+          border: 0;
+          border-radius: 50%;
+          background-color: #000;
+          color: #fff;
+          font-size: 1rem;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            background-color: #ffb84d;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

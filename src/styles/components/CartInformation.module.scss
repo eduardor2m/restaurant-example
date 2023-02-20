@@ -1,0 +1,131 @@
+.cart_information {
+  width: 100%;
+  height: 190px;
+  background-color: #fff;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  .main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    .total {
+      width: 100%;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+
+      .total_price {
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+
+        .total_value {
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: #ff6b35;
+        }
+
+        .total_text {
+          font-size: 1.2rem;
+          font-weight: 600;
+          color: var(--title);
+        }
+      }
+    }
+
+    .addCart {
+      width: 100%;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        width: 100%;
+        height: 60px;
+        background-color: #202c39;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        border: none;
+        border-radius: 10px;
+
+        .addCartContent {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .addCartContentIcon {
+            width: 15%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .wrapperAddCartContentIcon {
+              width: 100%;
+              height: 80%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #34cb79;
+              border-radius: 10px;
+            }
+          }
+
+          .addCartContentText {
+            width: 55%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .addCartContentPrice {
+            width: 25%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .wrapperAddCartContentPrice {
+              width: 100%;
+              height: 80%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #324a5f;
+              border-radius: 10px;
+
+              p {
+                font-size: 16px;
+                font-weight: 700;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

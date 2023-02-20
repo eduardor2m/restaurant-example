@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 160px;
+
+  .listDelete {
+    margin-top: 20px;
+  }
+
+  .products {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  button {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 5%;
+    height: 40px;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: var(--greenpeace);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,107 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 5vw;
+  padding-top: 180px;
+
+  .products {
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    margin-top: 100px;
+
+    .products_title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-align: start;
+      margin-bottom: 1rem;
+    }
+
+    .categories {
+      width: 90vw;
+      height: 76px;
+      .scroll_container {
+        width: 90vw;
+        height: 56px;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+
+        .list_categories {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+
+          .category_item {
+            width: 144px;
+            height: 48px;
+            background-color: #1d3557;
+            display: flex;
+            flex-direction: row;
+            border-radius: 8px;
+            margin-right: 10px;
+            cursor: pointer;
+
+            .category_icon {
+              width: 40px;
+              height: 100%;
+              border-right: 0.1px solid #d0d4db;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #e7ecef;
+            }
+
+            .category_title {
+              width: 70%;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #e7ecef;
+
+              h2 {
+                font-size: 16px;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .products_list {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .back_to_top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    cursor: pointer;
+
+    button {
+      width: 40px;
+      height: 40px;
+      background-color: #1d3557;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #e7ecef;
+    }
+  }
+}
