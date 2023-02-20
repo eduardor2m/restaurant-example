@@ -1,39 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Restaurant Example
+> Aplicativo para gerenciar pedidos de um restaurante.
 
-## Getting Started
+# Galeria
 
-First, run the development server:
+![localhost_3000_(iPhone XR)](https://user-images.githubusercontent.com/62352928/220031600-61fb9d9d-4c63-43f0-a13b-e5ce5c76022d.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+![localhost_3000_(iPhone XR) (2)](https://user-images.githubusercontent.com/62352928/220031661-ffa46dbb-8d13-42c8-b041-4be377d54aad.png)
+
+
+# Objetivos
+
+- [ ] Otimizar a aplicação
+
+# Serviços Externos
+
+- [Firebase](https://firebase.com/) ( Banco de dados e OAuth )
+
+# Variaveis de Ambiente
+
+```env
+NEXT_PUBLIC_API_KEY=xxxxxxx
+NEXT_PUBLIC_AUTH_DOMAIN=xxxxxxxxx
+NEXT_PUBLIC_PROJECT_ID=xxxxxxxxx
+NEXT_PUBLIC_STORAGE_BUCKET=xxxxxxxx
+NEXT_PUBLIC_MESSAGING_SENDER_ID=xxxxxxx
+NEXT_PUBLIC_APP_ID=xxxxxxx
+NEXT_PUBLIC_MEASUREMENT_ID=xxxxx
+URL=xxxxx
+DEVELOPING=xxxxx
+NEXT_PUBLIC_URL=xxxxxxx
+NEXT_PUBLIC_DEVELOPING=xxxxxxx
+MY_SECRET_TOKEN=xxxxxxx
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Rodar Projeto
+> Após adicionar todas as variáveis de ambiente comande no terminal:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# restaurant-example
+```bash
+yarn
+```
+```bash
+yarn start
+```
